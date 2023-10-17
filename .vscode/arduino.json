@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "/dev/tty.usbmodem1101",
+    "sketch": "poc_motor_driver/poc_motor_driver.ino"
+}
