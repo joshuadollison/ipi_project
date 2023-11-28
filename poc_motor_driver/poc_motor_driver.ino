@@ -38,7 +38,7 @@ void setup() {
 
 }
 
-const int STEP = 0;
+const int STEP = 10;
 int current_motor = 10;
 //#define TESTING = 1
 
@@ -87,20 +87,21 @@ void loop() {
             break;
 
         default:
-            last_thing++;
+            //last_thing++;
 
-            Serial.print("NADA: ");
-            Serial.println(last_thing);
+            //Serial.print("NADA: ");
+            //Serial.println(last_thing);
             
             break;
     }
 
+/*
     if(last_thing >= 20) {
         current_motor = 0;
         last_thing = 0;
         Serial.println("RESETTING FOR LACK OF ACTIVITY");
     }
-
+*/
     if(current_motor < 0)
         current_motor = 0;
     else if(current_motor > 255)
